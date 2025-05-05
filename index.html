@@ -11,11 +11,12 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="./scripts/jsons.js"></script>
     <script src="script.js"></script>
     <title>QuizApp</title>
 </head>
 
-<body>
+<body onload="init()">
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
             <span class="navbar-brand mb-0 h1">QuizApp</span>
@@ -25,30 +26,26 @@
         <div class="card quiz-card">
             <img src="./assets/img/Group 5.png" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <div class="card mb-2">
-                    <div class="card-body">
-                        This is some text within a card body.
+                <h5 class="card-title" id="question">Card title</h5>
+                <div class="card quiz-answer-card mb-2">
+                    <div class="card-body" id="answer_1">
                     </div>
                 </div>
-                <div class="card mb-2">
-                    <div class="card-body">
-                        This is some text within a card body.
+                <div class="card quiz-answer-card mb-2">
+                    <div class="card-body" id="answer_2">
                     </div>
                 </div>
-                <div class="card mb-2">
-                    <div class="card-body">
-                        This is some text within a card body.
+                <div class="card quiz-answer-card mb-2">
+                    <div class="card-body" id="answer_3">
                     </div>
                 </div>
-                <div class="card mb-4">
-                    <div class="card-body">
-                        This is some text within a card body.
+                <div class="card quiz-answer-card mb-4">
+                    <div class="card-body" id="answer_4">
                     </div>
                 </div>
                 <div class="question-footer">
                     <button class="btn btn-outline-primary">prev</button>
-                    <span> <b>1</b> von <b>5</b> Fragen</span>
+                    <span> <b>1</b> von <b id="all-questions"></b> Fragen</span>
                     <button class="btn btn-outline-primary">next</button>
                 </div>
             </div>            

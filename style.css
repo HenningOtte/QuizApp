@@ -15,6 +15,15 @@ body {
     width: 30rem;
 }
 
+.quiz-answer-card {
+    transition: background-color 0.2s ease;
+}
+
+.quiz-answer-card:hover {
+    cursor: pointer;
+    background-color: rgb(0, 0, 0, 0.06);
+}
+
 .question-footer {
     display: flex;
     justify-content: space-between;
