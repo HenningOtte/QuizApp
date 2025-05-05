@@ -1,0 +1,12 @@
+body {    
+    background-color: #F4EDFF;
+}
+
+.container {
+    min-height: 100vh;
+    height: 100%;
+    background-color: #F4EDFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
