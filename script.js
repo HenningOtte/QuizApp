@@ -12,3 +12,14 @@ function showQuestion() {
         document.getElementById(`answer_${i}`).innerHTML = question[`answer_${i}`];
     };
 };
+
+function answer(selection) {
+    let answer = questions[currentQuestion].right_answer;
+    let selectedQuestionNumber = selection.slice(-1);
+
+    if (selectedQuestionNumber == answer) {
+        document.getElementById(selection).parentNode.classList.add('bg-success');
+    } else {
+        document.getElementById(selection).parentNode.classList.add('bg-danger');
+    };
+};
