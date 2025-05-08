@@ -1,5 +1,10 @@
-body {    
+body {
     background-color: #F4EDFF;
+}
+
+p {
+    padding: 0;
+    margin: 0;
 }
 
 .container {
@@ -24,8 +29,50 @@ body {
     background-color: rgb(0, 0, 0, 0.06);
 }
 
-.bg-success, .bg-danger {
+.bg-success,
+.bg-danger {
     color: white;
+}
+
+.progress-container {
+    height: 16px;
+    background-color: rgba(var(--bs-secondary-bg-rgb), 1);
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: rgba(var(--bs-primary-rgb), 1);
+    border-radius: 0 8px 8px 0;
+    transition: width 0.5s ease;
+}
+
+.circle {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border-radius: 50%;
+    background-color: #F7D5BB;
+}
+
+.circle-img {
+    height: 35%;
+}
+
+.end-headline {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 800;
+    text-align: center;
+}
+
+.circle-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .question-footer {

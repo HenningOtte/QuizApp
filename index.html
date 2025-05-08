@@ -24,9 +24,19 @@
     </nav>
     <div class="container">
         <div class="card quiz-card">
-            <img src="./assets/img/Group 5.png" class="card-img-top" alt="...">
+            <div class="progress-container" id="progress_container">
+                <div class="progress-bar" id="progress_bar"></div>
+            </div>
             <div class="card-body d-none" id="end_screen">
-                Quiz beendet!
+                <div class="circle">
+                    <img src="./assets/img/Group 5.png" alt="" class="circle-img">
+                    <p class="end-headline">COMPLETE<br>HTML QUIZ</p>
+                    <span>YOUR SCORE <b id="amount_of_questions">10/10</b></span>
+                    <div class="circle-btns">
+                        <button class="btn btn-primary">SHARE</button>
+                        <button class="btn btn-outline-primary" onclick="replay()">REPLAY</button>
+                    </div>
+                </div>
             </div>
             <div class="card-body" id="quetion_body">
                 <h5 class="card-title" id="question">Card title</h5>
@@ -49,9 +59,10 @@
                 <div class="question-footer">
                     <button class="btn btn-outline-primary">prev</button>
                     <span> <b id="question_number">1</b> von <b id="all-questions"></b> Fragen</span>
-                    <button class="btn btn-outline-primary" id="next-button" onclick="nextQuestion()" disabled>next</button>
+                    <button class="btn btn-outline-primary" id="next-button" onclick="nextQuestion()"
+                        disabled>next</button>
                 </div>
-            </div>            
+            </div>
         </div>
     </div>
 </body>
