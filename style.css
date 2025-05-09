@@ -1,5 +1,5 @@
 body {
-    background-color: #F4EDFF;
+    background-color: #603b9c;
 }
 
 p {
@@ -7,13 +7,16 @@ p {
     margin: 0;
 }
 
-.container {
-    min-height: 100vh;
-    height: 100%;
-    background-color: #F4EDFF;
+main {
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.main-container {
+    height: 440px;
+    display: flex;
 }
 
 .quiz-card {
@@ -47,7 +50,14 @@ p {
     transition: width 0.5s ease;
 }
 
+.end-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .circle {
+    height: 360px;
     aspect-ratio: 1 / 1;
     display: flex;
     flex-direction: column;

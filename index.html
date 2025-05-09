@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/quiz_navigation.css">
     <link rel="stylesheet" href="style.css">
     <script src="./scripts/jsons.js"></script>
     <script src="script.js"></script>
@@ -22,49 +23,71 @@
             <span class="navbar-brand mb-0 h1">QuizApp</span>
         </div>
     </nav>
-    <div class="container">
-        <div class="card quiz-card">
-            <div class="progress-container" id="progress_container">
-                <div class="progress-bar" id="progress_bar"></div>
-            </div>
-            <div class="card-body d-none" id="end_screen">
-                <div class="circle">
-                    <img src="./assets/img/Group 5.png" alt="" class="circle-img">
-                    <p class="end-headline">COMPLETE<br>HTML QUIZ</p>
-                    <span>YOUR SCORE <b id="amount_of_questions">10/10</b></span>
-                    <div class="circle-btns">
-                        <button class="btn btn-primary">SHARE</button>
-                        <button class="btn btn-outline-primary" onclick="replay()">REPLAY</button>
-                    </div>
+    <main>
+        <div class="main-container">
+            <div class="quiz-nav">
+                <div class="quiz-themes">
+                    <d class="theme">
+                        <span>HTML</span>
+                        <div class="selection-container"></div>
+                    </d>
+                    <d class="theme">
+                        <span>CSS</span>
+                        <div class="selection-container"></div>
+                    </d>
+                    <d class="theme">
+                        <span>JS</span>
+                        <div class="selection-container"></div>
+                    </d>
+                    <d class="theme">
+                        <span>Java</span>
+                        <div class="selection-container"></div>
+                    </d>
                 </div>
             </div>
-            <div class="card-body" id="quetion_body">
-                <h5 class="card-title" id="question">Card title</h5>
-                <div class="card quiz-answer-card mb-2">
-                    <div class="card-body" id="answer_1" onclick="answer('answer_1')">
+            <div class="card quiz-card">
+                <div class="progress-container" id="progress_container">
+                    <div class="progress-bar" id="progress_bar"></div>
+                </div>
+                <div class="card-body end-screen d-none" id="end_screen">
+                    <div class="circle">
+                        <img src="./assets/img/Group 5.png" alt="" class="circle-img">
+                        <p class="end-headline">COMPLETE<br>HTML QUIZ</p>
+                        <span>YOUR SCORE <b id="amount_of_questions">10/10</b></span>
+                        <div class="circle-btns">
+                            <button class="btn btn-primary">SHARE</button>
+                            <button class="btn btn-outline-primary" onclick="replay()">REPLAY</button>
+                        </div>
                     </div>
                 </div>
-                <div class="card quiz-answer-card mb-2">
-                    <div class="card-body" id="answer_2" onclick="answer('answer_2')">
+                <div class="card-body" id="quetion_body">
+                    <h5 class="card-title" id="question">Card title</h5>
+                    <div class="card quiz-answer-card mb-2">
+                        <div class="card-body" id="answer_1" onclick="answer('answer_1')">
+                        </div>
                     </div>
-                </div>
-                <div class="card quiz-answer-card mb-2">
-                    <div class="card-body" id="answer_3" onclick="answer('answer_3')">
+                    <div class="card quiz-answer-card mb-2">
+                        <div class="card-body" id="answer_2" onclick="answer('answer_2')">
+                        </div>
                     </div>
-                </div>
-                <div class="card quiz-answer-card mb-4">
-                    <div class="card-body" id="answer_4" onclick="answer('answer_4')">
+                    <div class="card quiz-answer-card mb-2">
+                        <div class="card-body" id="answer_3" onclick="answer('answer_3')">
+                        </div>
                     </div>
-                </div>
-                <div class="question-footer">
-                    <button class="btn btn-outline-primary">prev</button>
-                    <span> <b id="question_number">1</b> von <b id="all-questions"></b> Fragen</span>
-                    <button class="btn btn-outline-primary" id="next-button" onclick="nextQuestion()"
-                        disabled>next</button>
+                    <div class="card quiz-answer-card mb-4">
+                        <div class="card-body" id="answer_4" onclick="answer('answer_4')">
+                        </div>
+                    </div>
+                    <div class="question-footer">
+                        <button class="btn btn-outline-primary">prev</button>
+                        <span> <b id="question_number">1</b> von <b id="all-questions"></b> Fragen</span>
+                        <button class="btn btn-outline-primary" id="next-button" onclick="nextQuestion()"
+                            disabled>next</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 </body>
 
 </html>
