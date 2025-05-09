@@ -21,6 +21,7 @@ main {
 
 .quiz-card {
     width: 30rem;
+    background-color: white;
 }
 
 .quiz-answer-card {
@@ -48,6 +49,15 @@ main {
     background-color: rgba(var(--bs-primary-rgb), 1);
     border-radius: 0 8px 8px 0;
     transition: width 0.5s ease;
+}
+
+.card-body {
+    padding: 16px;
+}
+
+.card-title {
+    margin-bottom: 16px;
+    height: 48px;
 }
 
 .end-screen {
