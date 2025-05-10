@@ -1,7 +1,7 @@
 .quiz-nav {
     display: flex;
     flex-direction: row;
-    background-color: aquamarine;
+    background-color: #0d6efd;
     height: 100%;
 }
 
@@ -13,24 +13,34 @@
 .theme {
     width: 72px;
     height: 72px;
-    background-color: yellow;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: end;
     transform: rotate(-90deg);
     box-sizing: border-box;
     cursor: pointer;
+    font-weight: 600;
+    color: white;
 }
 
 .quiz-select-box {
     position: relative;
     width: 72px;
     height: 72px;
-    top: 0px;
-    background-color: rgb(255, 0, 0, 0.5);
-    border: 1px solid black;
+    top: 72px;
+    background-color: rgba(var(--bs-body-bg-rgb), 1);
     box-sizing: border-box;
     z-index: 1;
     transition: top 0.2s ease-in;
+    -webkit-mask-image: url(../assets/masks/mask_theme.png);
+    mask-image: url(../assets/masks/mask_theme.png);
+    mask-repeat: no-repeat;
+    mask-size: 100%;
+    transform: rotate(-90deg);
+    mask-position: 0 100%;
+    color: #0d6efd;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-weight: 600;
 }
