@@ -1,5 +1,5 @@
 body {
-    background-color: #603b9c;
+    background-color: rgba(var(--bs-secondary-bg-rgb), 1);
 }
 
 p {
@@ -15,7 +15,10 @@ main {
 }
 
 .main-container {
-    height: 440px;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 456px;
+    width: auto;
     display: flex;
 }
 
@@ -39,8 +42,10 @@ main {
 }
 
 .progress-container {
-    height: 16px;
+    height: 12px;
     background-color: rgba(var(--bs-secondary-bg-rgb), 1);
+    margin: 16px 16px 0 16px;    
+    border-radius: 6px;
 }
 
 .progress-bar {
@@ -49,6 +54,7 @@ main {
     background-color: rgba(var(--bs-primary-rgb), 1);
     border-radius: 0 8px 8px 0;
     transition: width 0.5s ease;
+    border-radius: 6px;
 }
 
 .card-body {
