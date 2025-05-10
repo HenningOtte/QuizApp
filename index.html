@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles/quiz_navigation.css">
     <link rel="stylesheet" href="style.css">
     <script src="./scripts/jsons.js"></script>
+    <script src="./scripts/theme_nav.js"></script>
     <script src="script.js"></script>
     <title>QuizApp</title>
 </head>
@@ -24,14 +25,14 @@
         </div>
     </nav>
     <main>
-        <div class="main-container">
+        <div class="main-container" id="main_container">
             <div class="quiz-nav">
                 <div class="quiz-themes">
-                    <div class="quiz-select-box"></div>
-                    <div class="theme">HTML</div>
-                    <div class="theme">CSS</div>
-                    <div class="theme">JS</div>
-                    <div class="theme">JAVA</div>
+                    <div class="quiz-select-box" id="quiz_box"></div>
+                    <div class="theme" onclick="open_theme(0)">HTML</div>
+                    <div class="theme" onclick="open_theme(1)">CSS</div>
+                    <div class="theme" onclick="open_theme(2)">JS</div>
+                    <div class="theme" onclick="open_theme(3)">JAVA</div>
                 </div>
             </div>
             <div class="quiz-card">
