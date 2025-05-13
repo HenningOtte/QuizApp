@@ -1,8 +1,16 @@
 .quiz-nav {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     background-color: #0d6efd;
     height: 100%;
+    padding-top: 8px;
+}
+
+.quiz-logo-nav {
+    height: 56px;
+    width: 56px;
+    margin-bottom: -64px;
 }
 
 .quiz-themes {

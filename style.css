@@ -73,19 +73,16 @@ main {
 }
 
 .circle {
-    height: 360px;
-    aspect-ratio: 1 / 1;
+    margin-top: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 16px;
-    border-radius: 50%;
-    background-color: #F7D5BB;
 }
 
 .circle-img {
-    height: 35%;
+    height: 128px;
+    width: 128px;
 }
 
 .end-headline {
@@ -97,7 +94,7 @@ main {
 
 .circle-btns {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 8px;
 }
 
